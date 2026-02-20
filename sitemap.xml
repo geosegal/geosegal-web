@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-      <loc>https://geosegal.cl/</loc>
-      <priority>1.00</priority>
-   </url>
+
+<url>
+<loc>https://geosegal.cl/</loc>
+<priority>1.00</priority>
+</url>
+
+<url>
+<loc>https://geosegal.cl/topografia.html</loc>
+</url>
+
+<url>
+<loc>https://geosegal.cl/arquitectura.html</loc>
+</url>
+
+<url>
+<loc>https://geosegal.cl/proyectos.html</loc>
+</url>
+
+<url>
+<loc>https://geosegal.cl/biblioteca.html</loc>
+</url>
+
+<url>
+<loc>https://geosegal.cl/contacto.html</loc>
+</url>
+
 </urlset>

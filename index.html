@@ -1,56 +1,138 @@
-/* ===== RESET & BASE ===== */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Poppins', sans-serif; color: #111111; background-color: #fff; line-height: 1.6; }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Geosegal: soluciones profesionales en geomensura, topografía, arquitectura, ingeniería y sustentabilidad en Chile.">
+  <title>Geosegal | Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
 
-/* ===== CONTAINER ===== */
-.container { width: 90%; max-width: 1200px; margin: auto; }
+  <!-- ======= HEADER / NAV ======= -->
+  <header class="header">
+    <div class="container header-container">
+      <h1 class="logo">Geosegal</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="topografia.html">Topografía</a></li>
+          <li><a href="arquitectura.html">Arquitectura</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="biblioteca.html">Biblioteca</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-/* ===== HEADER ===== */
-.header { background: #111111; color: #fff; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 100; }
-.header-container { display: flex; justify-content: space-between; align-items: center; }
-.logo { font-size: 1.8rem; font-weight: bold; color: #F2B705; }
-.nav ul { display: flex; list-style: none; }
-.nav ul li { margin-left: 2rem; }
-.nav ul li a { color: #fff; text-decoration: none; transition: color 0.3s; }
-.nav ul li a:hover { color: #F2B705; }
+  <!-- ======= HERO / PORTADA ======= -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h2>Soluciones profesionales en Geomensura, Arquitectura e Ingeniería</h2>
+      <p>Precision, innovación y sustentabilidad en cada proyecto</p>
+      <a href="proyectos.html" class="btn-primary">Conócenos</a>
+    </div>
+  </section>
 
-/* ===== HERO ===== */
-.hero { height: 100vh; background: url('../assets/img/hero.jpg') center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-align: center; }
-.hero-overlay { background: rgba(0,0,0,0.5); padding: 2rem; border-radius: 10px; color: #fff; }
-.hero-overlay h2 { font-size: 2.5rem; margin-bottom: 1rem; }
-.hero-overlay p { margin-bottom: 1.5rem; font-size: 1.2rem; }
-.btn-primary { display: inline-block; background: #F2B705; color: #111; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 5px; transition: background 0.3s; }
-.btn-primary:hover { background: #D99A00; }
+  <!-- ======= SOBRE GEOSÉGAL / HISTORIA ======= -->
+  <section class="about container">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>Nuestra Historia</h2>
+        <p>Geosegal nació con la misión de ofrecer soluciones técnicas de alta calidad en geomensura y topografía. Con el tiempo, nos expandimos hacia arquitectura, ingeniería y proyectos sustentables como instalación de paneles solares, consolidándonos como referente en innovación y profesionalismo.</p>
+      </div>
+      <div class="about-image">
+        <img src="assets/img/historia.jpg" alt="Historia Geosegal">
+      </div>
+    </div>
+  </section>
 
-/* ===== SECCIONES ===== */
-section { padding: 6rem 0; }
-.about-content { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; }
-.about-text { flex: 1; }
-.about-image { flex: 1; }
-.about-image img { width: 100%; border-radius: 10px; }
+  <!-- ======= VISIÓN Y OBJETIVOS ======= -->
+  <section class="vision">
+    <div class="container">
+      <h2>Visión y Objetivos</h2>
+      <div class="vision-cards">
+        <div class="card">
+          <img src="assets/img/icono-innovacion.png" alt="Innovación">
+          <h3>Innovación técnica</h3>
+          <p>Implementamos las últimas tecnologías para brindar soluciones precisas y eficientes.</p>
+        </div>
+        <div class="card">
+          <img src="assets/img/icono-sustentable.png" alt="Sustentabilidad">
+          <h3>Proyectos sustentables</h3>
+          <p>Nos comprometemos con el medio ambiente a través de proyectos responsables y sostenibles.</p>
+        </div>
+        <div class="card">
+          <img src="assets/img/icono-calidad.png" alt="Calidad">
+          <h3>Precisión y calidad</h3>
+          <p>Cada proyecto se realiza con la máxima rigurosidad técnica y profesionalismo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-.vision-cards { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem; }
-.card { background: #F5F5F5; padding: 2rem; text-align: center; border-radius: 10px; flex: 1 1 250px; }
-.card img { width: 60px; margin-bottom: 1rem; }
+  <!-- ======= SERVICIOS DESTACADOS ======= -->
+  <section class="services container">
+    <h2>Servicios Destacados</h2>
+    <div class="service-cards">
+      <div class="service-card">
+        <h3>Topografía</h3>
+        <p>Levantamientos precisos y mapas detallados para proyectos de construcción y desarrollo.</p>
+      </div>
+      <div class="service-card">
+        <h3>Arquitectura</h3>
+        <p>Diseño arquitectónico innovador, funcional y alineado con cada proyecto y cliente.</p>
+      </div>
+      <div class="service-card">
+        <h3>Ingeniería</h3>
+        <p>Consultoría técnica en proyectos industriales, civiles y de infraestructura.</p>
+      </div>
+      <div class="service-card">
+        <h3>Sustentabilidad</h3>
+        <p>Implementación de paneles solares y soluciones energéticas eficientes y sostenibles.</p>
+      </div>
+    </div>
+  </section>
 
-.service-cards { display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem; }
-.service-card { flex: 1 1 250px; background: #fff; padding: 1.5rem; border: 1px solid #ddd; border-radius: 10px; transition: transform 0.3s; }
-.service-card:hover { transform: translateY(-5px); }
+  <!-- ======= PROYECTOS / BIBLIOTECA ======= -->
+  <section class="projects container">
+    <h2>Proyectos Recientes</h2>
+    <div class="projects-grid">
+      <img src="assets/ortomosaicos/ortomosaico1.jpg" alt="Proyecto 1">
+      <img src="assets/ortomosaicos/ortomosaico2.jpg" alt="Proyecto 2">
+      <img src="assets/ortomosaicos/ortomosaico3.jpg" alt="Proyecto 3">
+      <img src="assets/ortomosaicos/ortomosaico4.jpg" alt="Proyecto 4">
+    </div>
+    <a href="biblioteca.html" class="btn-primary">Ver Biblioteca</a>
+  </section>
 
-.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 2rem; }
-.projects-grid img { width: 100%; border-radius: 10px; }
+  <!-- ======= CONTACTO / CTA ======= -->
+  <section class="cta">
+    <div class="container">
+      <h2>Hablemos de tu próximo proyecto</h2>
+      <p>Estamos listos para ofrecer soluciones técnicas de excelencia.</p>
+      <a href="contacto.html" class="btn-primary">Contáctanos</a>
+    </div>
+  </section>
 
-.cta { background: #111; color: #fff; text-align: center; padding: 4rem 2rem; }
-.cta .btn-primary { color: #111; }
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div>
+        <h3>Geosegal</h3>
+        <p>Chile | +56 9 1234 5678 | contacto@geosegal.cl</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 
-/* ===== FOOTER ===== */
-.footer { background: #111; color: #fff; padding: 2rem 0; }
-.footer-container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
-.footer a { color: #F2B705; text-decoration: none; }
-.footer a:hover { color: #D99A00; }
-
-/* ===== RESPONSIVE ===== */
-@media(max-width: 768px){
-  .about-content { flex-direction: column; }
-  .nav ul { flex-direction: column; gap: 1rem; }
-}
+</body>
+</html>

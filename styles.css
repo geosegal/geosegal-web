@@ -5,47 +5,69 @@ body { font-family: 'Poppins', sans-serif; color: #111111; background-color: #ff
 /* ===== CONTAINER ===== */
 .container { width: 90%; max-width: 1200px; margin: auto; }
 
-/* ===== HEADER BLANCO ===== */
+/* HEADER GENERAL */
 .header {
-  background: #FFFFFF; /* blanco puro */
-  color: #111111;      /* letras negras del menú */
-  padding: 0.5rem 0;   /* header compacto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra ligera */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* CONTENEDOR */
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 90%;
+  max-width: 1200px;
 }
 
-/* Logo */
+/* LOGO sobre fondo blanco */
+.logo-wrapper {
+  background: #FFFFFF; /* blanco */
+  padding: 0.3rem 1rem;
+  border-radius: 5px; /* opcional, bordes suaves */
+  display: flex;
+  align-items: center;
+}
+
 .logo-img {
   height: 40px;
   width: auto;
+  display: block;
 }
 
-/* Menú */
-.nav ul { list-style: none; display: flex; gap: 1.5rem; }
+/* MENÚ sobre amarillo */
+.nav {
+  background: #F2B705; /* amarillo corporativo */
+  border-radius: 5px;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  gap: 1.5rem;
+}
+
 .nav ul li a {
-  color: #111111; /* letras negras */
+  color: #111111;  /* letras negras */
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
 }
+
 .nav ul li a:hover { color: #D99A00; }
 
 /* ===== HERO CON DIFUMINADO AMARILLO ===== */
 .hero {
   height: 100vh;
-  background: linear-gradient(
-      rgba(242, 183, 5, 0.3),  /* amarillo transparente arriba */
-      rgba(242, 183, 5, 0.3)   /* amarillo transparente abajo */
-    ),
+  background: FFFFFF;
     url('assets/img/hero.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;

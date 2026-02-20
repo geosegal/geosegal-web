@@ -5,63 +5,63 @@ body { font-family: 'Poppins', sans-serif; color: #111111; background-color: #ff
 /* ===== CONTAINER ===== */
 .container { width: 90%; max-width: 1200px; margin: auto; }
 
-/* HEADER GENERAL */
+/* HEADER FLEX BICOLOR */
 .header {
-  background: #F2B705; /* amarillo corporativo */
-  padding: 0.5rem 0;
-  position: fixed;
+  display: flex;
   width: 100%;
+  position: fixed;
   top: 0;
   z-index: 100;
+  height: 60px; /* altura fija */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* CONTENEDOR */
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  max-width: 1200px;
-}
-
-/* LOGO con margen blanco */
-.logo-wrapper {
-  background: #FFFFFF;   /* blanco alrededor del logo */
-  padding: 0.3rem 0.6rem; /* margen interno */
-  border-radius: 5px;    /* bordes suaves */
+/* PARTE IZQUIERDA - LOGO SOBRE BLANCO */
+.header-left {
+  background: #FFFFFF;
+  padding-left: 1rem;
   display: flex;
   align-items: center;
+  border-right: 2px solid #F2B705; /* línea divisoria */
+  flex: 0 0 auto; /* ancho según contenido */
 }
 
+/* LOGO */
 .logo-img {
   height: 80px;
   width: auto;
   display: block;
 }
 
-/* MENÚ */
-.nav {
+/* PARTE DERECHA - MENÚ SOBRE AMARILLO */
+.header-right {
+  background: #F2B705;
+  flex: 1; /* ocupa el resto del espacio */
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  padding-right: 2rem;
 }
 
+/* MENÚ */
 .nav ul {
   display: flex;
   list-style: none;
+  gap: 1.5rem;
   margin: 0;
   padding: 0;
-  gap: 1.5rem;
 }
 
 .nav ul li a {
-  color: #111111;  /* letras negras */
+  color: #111111; /* letras negras */
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
 }
 
-.nav ul li a:hover { color: #D99A00; }
+.nav ul li a:hover {
+  color: #D99A00;
+}
 /* ===== HERO CON DIFUMINADO AMARILLO ===== */
 .hero {
   height: 100vh;

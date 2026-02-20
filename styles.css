@@ -5,18 +5,39 @@ body { font-family: 'Poppins', sans-serif; color: #111111; background-color: #ff
 /* ===== CONTAINER ===== */
 .container { width: 90%; max-width: 1200px; margin: auto; }
 
-/* ===== HEADER ===== */
-.header { background: #111111; color: #fff; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 100; }
-.header-container { display: flex; justify-content: space-between; align-items: center; }
-.logo { font-size: 1.8rem; font-weight: bold; color: #F2B705; }
-.nav ul { display: flex; list-style: none; }
-.nav ul li { margin-left: 2rem; }
-.nav ul li a { color: #fff; text-decoration: none; transition: color 0.3s; }
-.nav ul li a:hover { color: #F2B705; }
+/* ===== HEADER AMARILLO / NEGRO ===== */
+.header {
+  background: #F2B705; /* amarillo corporativo */
+  color: #111111;       /* letras negras */
+  padding: 0.5rem 0;    /* header compacto */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra ligera para separación */
+}
 
-/* Logo imagen */
-.logo-link { display: inline-block; }
-.logo-img { height: 50px; width: auto; }
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo-img {
+  height: 100px;  /* tamaño compacto */
+  width: auto;
+}
+
+/* Menú */
+.nav ul { list-style: none; display: flex; gap: 1.5rem; }
+.nav ul li a {
+  color: #111111;   /* letras negras */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav ul li a:hover { color: #D99A00; } /* hover más oscuro */
 
 /* ===== HERO ===== */
 .hero { height: 100vh; background: url('assets/img/hero.jpg') center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-align: center; }

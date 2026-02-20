@@ -15,7 +15,7 @@ body { font-family: 'Poppins', sans-serif; color: #111111; background-color: #ff
 .nav ul li a:hover { color: #F2B705; }
 
 /* ===== HERO ===== */
-.hero { height: 100vh; background: url('../assets/img/hero.jpg') center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-align: center; }
+.hero { height: 100vh; background: url('assets/img/hero.jpg') center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-align: center; }
 .hero-overlay { background: rgba(0,0,0,0.5); padding: 2rem; border-radius: 10px; color: #fff; }
 .hero-overlay h2 { font-size: 2.5rem; margin-bottom: 1rem; }
 .hero-overlay p { margin-bottom: 1.5rem; font-size: 1.2rem; }

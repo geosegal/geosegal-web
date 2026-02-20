@@ -7,9 +7,8 @@ body { font-family: 'Poppins', sans-serif; color: #111111; background-color: #ff
 
 /* HEADER GENERAL */
 .header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: #F2B705; /* amarillo corporativo */
+  padding: 0.5rem 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -26,32 +25,32 @@ body { font-family: 'Poppins', sans-serif; color: #111111; background-color: #ff
   max-width: 1200px;
 }
 
-/* LOGO sobre fondo blanco */
+/* LOGO con margen blanco */
 .logo-wrapper {
-  background: #FFFFFF; /* blanco */
-  padding: 0.3rem 1rem;
-  border-radius: 5px; /* opcional, bordes suaves */
+  background: #FFFFFF;   /* blanco alrededor del logo */
+  padding: 0.3rem 0.6rem; /* margen interno */
+  border-radius: 5px;    /* bordes suaves */
   display: flex;
   align-items: center;
 }
 
 .logo-img {
-  height: 100px;
+  height: 40px;
   width: auto;
   display: block;
 }
 
-/* MENÚ sobre amarillo */
+/* MENÚ */
 .nav {
-  background: #F2B705; /* amarillo corporativo */
-  border-radius: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .nav ul {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 0.5rem 1rem;
+  padding: 0;
   gap: 1.5rem;
 }
 
@@ -63,7 +62,6 @@ body { font-family: 'Poppins', sans-serif; color: #111111; background-color: #ff
 }
 
 .nav ul li a:hover { color: #D99A00; }
-
 /* ===== HERO CON DIFUMINADO AMARILLO ===== */
 .hero {
   height: 100vh;

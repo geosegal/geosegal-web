@@ -71,12 +71,12 @@ body { font-family: 'Poppins', sans-serif; color: #111111; background-color: #ff
       rgba(0, 0, 0, 0.55)
     ),
     url('images/imagen1.jpg') center/cover no-repeat;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: 60px; /* espacio por header fijo */
+  padding-top: 60px;
 }
 
 /* Contenedor del texto */

@@ -71,7 +71,7 @@ body { font-family: 'Poppins', sans-serif; color: #111111; background-color: #ff
       rgba(0, 0, 0, 0.55),
       rgba(0, 0, 0, 0.55)
     ),
-    url('assets/img/hero.jpg') center/cover no-repeat;
+    url('images/imagen1.jpg') center/cover no-repeat;
   
   display: flex;
   align-items: center;

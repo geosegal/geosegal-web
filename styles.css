@@ -62,7 +62,6 @@ body { font-family: 'Poppins', sans-serif; color: #111111; background-color: #ff
 .nav ul li a:hover {
   color: #D99A00;
 }
-/* ===== HERO CON DIFUMINADO AMARILLO ===== */
 /* HERO CON IMAGEN Y GRADIENTE CORPORATIVO */
 .hero {
   height: 100vh;

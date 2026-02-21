@@ -63,35 +63,40 @@ body { font-family: 'Poppins', sans-serif; color: #111111; background-color: #ff
   color: #D99A00;
 }
 /* ===== HERO CON DIFUMINADO AMARILLO ===== */
+/* HERO CON IMAGEN Y GRADIENTE CORPORATIVO */
 .hero {
   height: 100vh;
-  background: FFFFFF;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
     url('assets/img/hero.jpg') center/cover no-repeat;
+  
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: 70px; /* espacio para el header fijo */
+  padding-top: 60px; /* espacio por header fijo */
 }
 
+/* Contenedor del texto */
 .hero-overlay {
-  background: rgba(0,0,0,0.5); /* mantiene legibilidad del texto */
+  max-width: 800px;
+  color: #FFFFFF;
   padding: 2rem;
-  border-radius: 10px;
-  color: #fff;
 }
-.hero-overlay h2 { font-size: 2.5rem; margin-bottom: 1rem; }
-.hero-overlay p { margin-bottom: 1.5rem; font-size: 1.2rem; }
-.btn-primary {
-  display: inline-block;
-  background: #F2B705;
-  color: #111;
-  padding: 0.8rem 1.5rem;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s;
+
+.hero-overlay h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
 }
-.btn-primary:hover { background: #D99A00; }
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
 /* ===== SECCIONES ===== */
 section { padding: 6rem 0; }
 .about-content { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; }

@@ -105,7 +105,7 @@ section { padding: 6rem 0; }
 
 .vision-cards { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem; }
 .card { background: #F5F5F5; padding: 2rem; text-align: center; border-radius: 10px; flex: 1 1 250px; }
-.card img { width: 60px; margin-bottom: 1rem; }
+.card img { width: 80px; margin-bottom: 1rem; }
 
 .service-cards { display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem; }
 .service-card { flex: 1 1 250px; background: #fff; padding: 1.5rem; border: 1px solid #ddd; border-radius: 10px; transition: transform 0.3s; }

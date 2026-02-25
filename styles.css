@@ -275,7 +275,7 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
 .tecnologia-card img {
   width: 80%;
   height: 150px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .tecnologia-card h3 {

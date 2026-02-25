@@ -123,14 +123,8 @@ section { padding: 6rem 0; }
 .footer a { color: #F2B705; text-decoration: none; }
 .footer a:hover { color: #D99A00; }
 
-/* ===== RESPONSIVE ===== */
-@media(max-width: 768px){
-  .about-content { flex-direction: column; }
-  .nav ul { flex-direction: column; gap: 1rem; }
-}
 
-
-/* BOTÓN HAMBURGUESA */
+ /* BOTÓN OCULTO EN DESKTOP */
 .menu-toggle {
   display: none;
   background: none;
@@ -138,6 +132,11 @@ section { padding: 6rem 0; }
   font-size: 1.8rem;
   cursor: pointer;
   color: #111;
+}
+
+/* MENU NORMAL DESKTOP */
+.nav {
+  display: flex;
 }
 
 /* RESPONSIVE */
@@ -148,14 +147,15 @@ section { padding: 6rem 0; }
     display: block;
   }
 
-  /* Ocultar menú por defecto */
+  /* Ocultar menú horizontal */
   .nav {
+    display: none;
     position: absolute;
     top: 60px;
     right: 0;
-    background: #F2B705;
     width: 100%;
-    display: none;
+    background: #F2B705;
+    flex-direction: column;
     padding: 1rem 0;
   }
 
@@ -165,8 +165,8 @@ section { padding: 6rem 0; }
     gap: 1rem;
   }
 
+  /* Cuando esté activo */
   .nav.active {
-    display: block;
+    display: flex;
   }
-
 }

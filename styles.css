@@ -108,11 +108,7 @@ section { padding: 6rem 0; }
 .card img { width: 200px; margin-bottom: 1rem; }
 
 .service-cards { display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem; }
-.service-card { flex: 1 1 250px; background: linear-gradient(
-    135deg,
-    rgba(242, 183, 5, 0.25),
-    rgba(242, 183, 5, 0.08)
-  );; padding: 1.5rem; border: 1px solid #ddd; border-radius: 10px; transition: transform 0.3s; }
+.service-card { flex: 1 1 250px; background: rgba(242, 183, 5, 0.12); padding: 1.5rem; border: 1px solid #ddd; border-radius: 10px; transition: transform 0.3s; }
 .service-card:hover { transform: translateY(-5px); }
 
 .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 2rem; }

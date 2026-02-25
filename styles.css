@@ -103,8 +103,8 @@ section { padding: 6rem 0; }
 .about-image { flex: 1; }
 .about-image img { width: 100%; border-radius: 10px; }
 
-.vision-cards { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem; }
-.card { background: #F5F5F5; padding: 2rem; text-align: center; border-radius: 20px; flex: 1 1 250px; }
+.vision-cards { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 1rem; }
+.card { background: #F5F5F5; padding: 2rem; text-align: center; border-radius: 10px; flex: 1 1 250px; }
 .card img { width: 200px; margin-bottom: 1rem; }
 
 .service-cards { display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem; }

@@ -203,9 +203,9 @@ section { padding: 6rem 0; }
 
 .topografia .slides {
   display: flex;
-  width: 300%;
+  width: 100%;
   height: 100%;
-  transition: transform 1s ease-in-out;
+  transition: transform 2s ease-in-out;
 }
 
 .topografia .slide {

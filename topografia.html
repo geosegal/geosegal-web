@@ -6,120 +6,158 @@
   <title>Topografía | Geosegal</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="topografia">
 
-<!-- HEADER (usa el mismo que ya tienes en index) -->
-<header class="header">
-  <div class="header-left">
-    <a href="index.html">
-      <img src="images/geosegal.png" alt="Geosegal" class="logo-img">
-    </a>
-  </div>
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="header-left">
+      <a href="index.html">
+        <img src="images/geosegal.png" alt="Geosegal" class="logo-img">
+      </a>
+    </div>
 
-  <div class="header-right">
-    <button class="menu-toggle" id="menu-toggle">☰</button>
+    <div class="header-right">
+      <button class="menu-toggle" id="menu-toggle">☰</button>
 
-    <nav class="nav" id="nav">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="topografia.html">Topografía</a></li>
-        <li><a href="arquitectura.html">Arquitectura</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="biblioteca.html">Biblioteca</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="topografia.html">Topografía</a></li>
+          <li><a href="arquitectura.html">Arquitectura</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="biblioteca.html">Biblioteca</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<!-- HERO SLIDER -->
-<section class="hero-slider">
-  <div class="slides">
-    <div class="slide">
-      <img src="images/topo1.jpg" alt="Estación total">
-      <div class="slide-content">
-        <h1>Topografía y Geomensura de Precisión</h1>
-        <p>Estación Total · GPS Geodésico RTK · Dron Fotogramétrico</p>
+
+  <!-- ================= HERO SLIDER ================= -->
+  <section class="hero-slider">
+    <div class="slides">
+
+      <div class="slide">
+        <img src="images/topo1.jpg" alt="Estación Total">
+        <div class="slide-content">
+          <h1>Topografía y Geomensura de Precisión</h1>
+          <p>Estación Total · GPS Geodésico RTK · Dron Fotogramétrico</p>
+        </div>
       </div>
+
+      <div class="slide">
+        <img src="images/topo2.jpg" alt="GPS Geodésico">
+      </div>
+
+      <div class="slide">
+        <img src="images/topo3.jpg" alt="Levantamiento con Dron">
+      </div>
+
     </div>
+  </section>
 
-    <div class="slide">
-      <img src="images/topo2.jpg" alt="GPS Geodésico">
+
+  <!-- ================= INTRODUCCIÓN ================= -->
+  <section class="container" style="padding: 6rem 0 3rem 0;">
+    <h2 style="text-align:center; margin-bottom: 2rem;">
+      Tecnología Aplicada a la Ingeniería Territorial
+    </h2>
+
+    <p style="max-width: 900px; margin: auto; text-align: center;">
+      En Geosegal ejecutamos levantamientos topográficos mediante tecnología de alta precisión,
+      seleccionando el método adecuado según las condiciones del terreno, nivel de detalle requerido
+      y normativa aplicable.
+    </p>
+  </section>
+
+
+  <!-- ================= TECNOLOGÍA ================= -->
+  <section class="container" style="padding-bottom: 6rem;">
+    <div class="vision-cards">
+
+      <div class="card">
+        <h3>Estación Total</h3>
+        <p>
+          Instrumentación electrónica de alta precisión para medición de ángulos y distancias,
+          ideal para replanteo y control geométrico en obras civiles y edificación.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>GPS Geodésico (RTK)</h3>
+        <p>
+          Sistema GNSS de posicionamiento satelital de alta exactitud, utilizado en
+          subdivisiones prediales, georreferenciación y levantamientos bajo sistemas oficiales.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Dron Fotogramétrico</h3>
+        <p>
+          Levantamientos aéreos para generación de ortomosaicos, modelos digitales de terreno (MDT)
+          y nubes de puntos de alta resolución.
+        </p>
+      </div>
+
     </div>
+  </section>
 
-    <div class="slide">
-      <img src="images/topo3.jpg" alt="Levantamiento con dron">
+
+  <!-- ================= SERVICIOS ================= -->
+  <section class="container" style="padding-bottom: 6rem;">
+    <h2 style="text-align:center; margin-bottom: 2rem;">
+      Servicios de Topografía
+    </h2>
+
+    <ul class="topo-services">
+      <li>Levantamientos topográficos</li>
+      <li>Subdivisiones y loteos</li>
+      <li>Replanteo y control de obras</li>
+      <li>Curvas de nivel y cálculo de superficies</li>
+      <li>Georreferenciación oficial</li>
+      <li>Generación de ortofotos y modelos digitales de terreno</li>
+    </ul>
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Geosegal - Ingeniería y Geomensura</p>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- SECCIÓN TECNOLOGÍA -->
-<section class="section">
-  <h2 class="section-title">Tecnología Utilizada</h2>
 
-  <div class="vision-cards">
-    <div class="card">
-      <h3>Estación Total</h3>
-      <p>Instrumentación electrónica de alta precisión para medición de ángulos y distancias, ideal para replanteos y control geométrico de obras.</p>
-    </div>
+  <!-- ================= SCRIPT MENÚ ================= -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const toggle = document.getElementById("menu-toggle");
+      const nav = document.getElementById("nav");
 
-    <div class="card">
-      <h3>GPS Geodésico (RTK)</h3>
-      <p>Sistema GNSS de posicionamiento satelital para trabajos georreferenciados bajo sistemas oficiales y subdivisiones prediales.</p>
-    </div>
+      toggle.addEventListener("click", function() {
+        nav.classList.toggle("active");
+      });
+    });
+  </script>
 
-    <div class="card">
-      <h3>Dron Fotogramétrico</h3>
-      <p>Generación de ortomosaicos, MDT y modelos 3D de alta resolución para análisis territorial y planificación.</p>
-    </div>
-  </div>
-</section>
 
-<!-- SERVICIOS -->
-<section class="section">
-  <h2 class="section-title">Servicios de Topografía</h2>
+  <!-- ================= SCRIPT SLIDER ================= -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const slides = document.querySelector('.slides');
+      const totalSlides = document.querySelectorAll('.slide').length;
+      let index = 0;
 
-  <ul class="services-list">
-    <li>Levantamientos topográficos</li>
-    <li>Subdivisiones y loteos</li>
-    <li>Replanteo y control de obras</li>
-    <li>Curvas de nivel y cálculo de superficies</li>
-    <li>Georreferenciación oficial</li>
-    <li>Generación de ortofotos y MDT</li>
-  </ul>
-</section>
-
-<!-- FOOTER SIMPLE -->
-<footer class="footer">
-  <p>© 2026 Geosegal - Ingeniería y Geomensura</p>
-</footer>
-
-<!-- SCRIPT MENU -->
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const toggle = document.getElementById("menu-toggle");
-  const nav = document.getElementById("nav");
-
-  toggle.addEventListener("click", function() {
-    nav.classList.toggle("active");
-  });
-});
-</script>
-
-<!-- SCRIPT SLIDER -->
-<script>
-const slides = document.querySelector('.slides');
-const totalSlides = document.querySelectorAll('.slide').length;
-let index = 0;
-
-setInterval(() => {
-  index++;
-  if (index >= totalSlides) {
-    index = 0;
-  }
-  slides.style.transform = `translateX(-${index * 100}%)`;
-}, 5000);
-</script>
+      setInterval(() => {
+        index++;
+        if (index >= totalSlides) {
+          index = 0;
+        }
+        slides.style.transform = `translateX(-${index * 100}%)`;
+      }, 5000);
+    });
+  </script>
 
 </body>
 </html>

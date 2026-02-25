@@ -189,56 +189,99 @@ section { padding: 6rem 0; }
 }
 
 /* TOPOGRAFIA*/
+/* ===================================
+   HERO SLIDER - SOLO TOPOGRAFÍA
+=================================== */
 
-.hero-slider {
+.topografia .hero-slider {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   overflow: hidden;
+  margin-top: 60px; /* compensa header fixed */
 }
 
-.slides {
+.topografia .slides {
   display: flex;
   width: 300%;
   height: 100%;
   transition: transform 1s ease-in-out;
 }
 
-.slide {
+.topografia .slide {
   width: 100%;
   flex-shrink: 0;
   position: relative;
 }
 
-.slide img {
+.topografia .slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Capa oscura para que el texto se lea */
-.slide::after {
+.topografia .slide::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.45);
 }
 
-.slide-content {
+.topografia .slide-content {
   position: absolute;
   z-index: 2;
   color: white;
   top: 50%;
-  left: 10%;
+  left: 8%;
   transform: translateY(-50%);
   max-width: 600px;
 }
 
-.slide-content h1 {
+.topografia .slide-content h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 
-.slide-content p {
+.topografia .slide-content p {
   font-size: 1.2rem;
 }
+
+/* ===================================
+   BLOQUE SERVICIOS TOPOGRAFÍA
+=================================== */
+
+.topografia .topo-services {
+  max-width: 800px;
+  margin: 3rem auto;
+  list-style: none;
+  padding: 0;
+}
+
+.topografia .topo-services li {
+  background: rgba(242, 183, 5, 0.12);
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+/* ===================================
+   RESPONSIVE SLIDER
+=================================== */
+
+@media (max-width: 768px) {
+
+  .topografia .hero-slider {
+    height: 60vh;
+  }
+
+  .topografia .slide-content h1 {
+    font-size: 2rem;
+  }
+
+  .topografia .slide-content p {
+    font-size: 1rem;
+  }
+
+}
+

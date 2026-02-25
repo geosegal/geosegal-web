@@ -101,7 +101,7 @@ section { padding: 6rem 0; }
 .about-content { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; }
 .about-text { flex: 1; }
 .about-image { flex: 1; }
-.about-image img { width: 30%; border-radius: 10px; }
+.about-image img { width: 40%; border-radius: 10px; }
 
 .vision-cards { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem; }
 .card { background: #F5F5F5; padding: 2rem; text-align: center; border-radius: 20px; flex: 1 1 250px; }

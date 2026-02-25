@@ -98,8 +98,8 @@ body { font-family: 'Poppins', sans-serif; color: #111111; background-color: #ff
 }
 /* ===== SECCIONES ===== */
 section { padding: 6rem 0; }
-.about-content { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; }
-.about-text { flex: 1; }
+.about-content { display: flex; flex-wrap: wrap; gap: 3rem; align-items: center; }
+.about-text { flex: 2; }
 .about-image {  flex: 2;  display: flex;  justify-content: flex-end; /* Empuja la imagen a la derecha */}
 .about-image img { width: 40%; border-radius: 20px; }
 

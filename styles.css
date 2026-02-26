@@ -424,6 +424,17 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
   border-radius: 12px;
 }
 
+.arq-card ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+  color: #444;
+}
+
+.arq-card ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .servicios-arquitectura {

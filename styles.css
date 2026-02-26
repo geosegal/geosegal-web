@@ -452,6 +452,7 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
    PROYECTOS
 ============================== */
 
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -459,19 +460,24 @@ body {
   line-height: 1.6;
 }
 
-/* HERO */
-
 .hero-proyectos {
-  background: #1f2d3d;
-  color: white;
-  text-align: center;
-  padding: 4rem 2rem;
+  height: 60vh;
+  background: url('proyecto-bg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px; /* importante si el header es fijo */
+  position: relative;
 }
 
-.hero-proyectos h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.hero-overlay {
+  background: rgba(0,0,0,0.55);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
 }
+
 
 /* PROYECTOS DESTACADOS */
 

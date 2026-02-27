@@ -64,21 +64,25 @@ body { font-family: 'Poppins', sans-serif; color: #111111; background-color: #ff
 }
 /* HERO CON IMAGEN Y GRADIENTE CORPORATIVO */
 /* KPIs INDEX */
+/* VARIABLES DE MARCA */
+:root {
+  --negro-geosegal: #000000;
+  --amarillo-geosegal: #f2b705;
+}
 
-/* KPIs NACIONAL */
+/* KPIs ESTILO CORPORATIVO */
 
 .kpis-nacional {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  background: linear-gradient(135deg, #1f2d3d, #2e435c);
-  color: white;
+  background: var(--negro-geosegal);
   padding: 5rem 2rem;
   text-align: center;
 }
 
 .kpi-box {
   padding: 2rem;
-  border-right: 1px solid rgba(255,255,255,0.2);
+  border-right: 1px solid rgba(255,255,255,0.08);
 }
 
 .kpi-box:last-child {
@@ -88,13 +92,14 @@ body { font-family: 'Poppins', sans-serif; color: #111111; background-color: #ff
 .kpi-box h2 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
+  color: var(--amarillo-geosegal);
   font-weight: bold;
 }
 
 .kpi-box span {
   font-size: 1rem;
+  color: white;
   letter-spacing: 1px;
-  opacity: 0.9;
 }
 /* ===== SECCIONES ===== */
 section { padding: 6rem 0; }

@@ -65,25 +65,36 @@ body { font-family: 'Poppins', sans-serif; color: #111111; background-color: #ff
 /* HERO CON IMAGEN Y GRADIENTE CORPORATIVO */
 /* KPIs INDEX */
 
-.kpis-index {
+/* KPIs NACIONAL */
+
+.kpis-nacional {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  background: #1f2d3d;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  background: linear-gradient(135deg, #1f2d3d, #2e435c);
   color: white;
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
   text-align: center;
 }
 
-.kpi-item h2 {
+.kpi-box {
+  padding: 2rem;
+  border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+.kpi-box:last-child {
+  border-right: none;
+}
+
+.kpi-box h2 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
 
-.kpi-item p {
+.kpi-box span {
   font-size: 1rem;
-  opacity: 0.9;
   letter-spacing: 1px;
+  opacity: 0.9;
 }
 /* ===== SECCIONES ===== */
 section { padding: 6rem 0; }

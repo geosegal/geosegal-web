@@ -199,11 +199,11 @@ section { padding: 6rem 0; }
 =================================== */
 
 .topografia .hero-slider {
-  position:80% relative;
+  position: relative;
   width: 100%;
-  height: 150vh;
+  height: 100vh;
   overflow: hidden;
-  margin-top: 80px; /* compensa header fixed */
+  margin-top: 60px; /* igual que el header */
 }
 
 .topografia .slides {

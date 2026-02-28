@@ -550,16 +550,7 @@ body {
 
 /* ================= EMPRESAS ================= */
 
-.empresas {
-  padding: 5rem 0;
-  background-color: #f8f9fa;
-  text-align: center;
-}
-
-.empresas h2 {
-  margin-bottom: 3rem;
-  font-size: 2rem;
-}
+/* ================= EMPRESAS ================= */
 
 .empresas-logos {
   display: flex;
@@ -570,19 +561,19 @@ body {
 }
 
 .empresas-logos img {
-  max-width: 150px;
-  height: auto;
-  filter: grayscale(100%);
-  opacity: 0.8;
-  transition: all 0.3s ease;
+  width: 160px;        /* tamaño uniforme */
+  height: 80px;        /* altura fija */
+  object-fit: contain; /* mantiene proporción */
+  background: white;   /* fondo uniforme */
+  padding: 10px;       /* espacio interno */
+  border-radius: 8px;  
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
 }
 
 .empresas-logos img:hover {
-  filter: grayscale(0%);
-  opacity: 1;
   transform: scale(1.05);
 }
-
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .empresas-logos {

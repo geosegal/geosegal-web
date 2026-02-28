@@ -550,19 +550,18 @@ body {
 
 /* ================= EMPRESAS ================= */
 
-/* ================= EMPRESAS ================= */
 
 .empresas-logos {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 70px;
   flex-wrap: wrap;
 }
 
 .empresas-logos img {
-  width: 160px;        /* tamaño uniforme */
-  height: 80px;        /* altura fija */
+  width: 180px;        /* tamaño uniforme */
+  height: 100px;        /* altura fija */
   object-fit: contain; /* mantiene proporción */
   background: white;   /* fondo uniforme */
   padding: 10px;       /* espacio interno */

@@ -37,43 +37,42 @@
 
   <!-- HERO PROYECTOS -->
 
-  <section class="hero-slider">
+<section class="proyectos-hero">
 
-    <div class="slide-content">
-          <h1>Nuestros Proyectos</h1>
-          <p>Topografía · Arquitectura · Regularizaciones</p>
+  <div class="proyectos-content">
+    <h1>Nuestros Proyectos</h1>
+    <p>Topografía · Arquitectura · Regularizaciones</p>
+  </div>
+
+  <div class="proyectos-slides">
+
+    <div class="proyectos-slide">
+      <img src="images/Proyectos1.jpg" alt="Proyectos1">
     </div>
-    <div class="slides">
-    
-      <div class="slide">
-        <img src="images/Proyectos1.jpg" alt="Proyectos1">       
-      </div>
 
-      <div class="slide">
-        <img src="images/Proyectos2.jpg" alt="Proyectos2">       
-      </div>
-
-      <div class="slide">
-        <img src="images/Proyectos3.jpg" alt="Proyectos3">       
-      </div>
-
-      <div class="slide">
-        <img src="images/Proyectos4.jpg" alt="Proyectos4">       
-      </div>
-
-      <div class="slide">
-        <img src="images/Proyectos5.jpg" alt="Proyectos5">       
-      </div>
-
-      <div class="slide">
-        <img src="images/Proyectos6.jpg" alt="Proyectos6">       
-      </div>
-
+    <div class="proyectos-slide">
+      <img src="images/Proyectos2.jpg" alt="Proyectos2">
     </div>
-  </section>
 
+    <div class="proyectos-slide">
+      <img src="images/Proyectos3.jpg" alt="Proyectos3">
+    </div>
 
+    <div class="proyectos-slide">
+      <img src="images/Proyectos4.jpg" alt="Proyectos4">
+    </div>
 
+    <div class="proyectos-slide">
+      <img src="images/Proyectos5.jpg" alt="Proyectos5">
+    </div>
+
+    <div class="proyectos-slide">
+      <img src="images/Proyectos6.jpg" alt="Proyectos6">
+    </div>
+
+  </div>
+
+</section>
   <!-- PROYECTOS DESTACADOS -->
 
   <section class="proyectos-destacados">
@@ -186,6 +185,26 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 </script>
-  
+
+
+  <script>
+window.addEventListener("load", function() {
+
+  const container = document.querySelector(".proyectos-slides");
+  const slides = document.querySelectorAll(".proyectos-slide");
+
+  if (!container) return;
+
+  let index = 0;
+  const total = slides.length;
+
+  setInterval(() => {
+    index++;
+    if (index >= total) index = 0;
+    container.style.transform = `translateX(-${index * 100}%)`;
+  }, 4000);
+
+});
+</script>
 </body>
 </html>

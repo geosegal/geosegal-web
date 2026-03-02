@@ -465,8 +465,8 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
 
 .proyectos .hero-slider {
   position: relative;
-  width: 100hv;
-  height: 100hv;
+  width: 50hv;
+  height: 50hv;
   overflow: hidden;
 }
 

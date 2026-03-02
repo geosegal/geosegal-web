@@ -476,7 +476,7 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
   display: flex;
   width: 600%;
   height: 100%;
-  transition: transform 3s ease-in-out;
+  transition: transform 1.2s ease-in-out;
 }
 
 .proyectos-slide {

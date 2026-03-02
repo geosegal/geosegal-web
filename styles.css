@@ -203,7 +203,6 @@ section { padding: 6rem 0; }
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  margin-top: 60px; /* igual que el header */
 }
 
 .topografia .slides {
@@ -231,7 +230,7 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.45);
   top: 0;
   left: 0;
   z-index: 5;
@@ -242,7 +241,7 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
   color: white;
   top: 50%;
   left: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%, 50%);
   max-width: 600px;
   text-align: center;
 
@@ -257,19 +256,6 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
   font-size: 1.2rem;
 }
 
-
-
-/* Oscurecedor */
-.proyectos-slider::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.4);
-  top: 0;
-  left: 0;
-  z-index: 5;
-}
 
 
 /* ====== TECNOLOGIA TOPOGRAFIA ====== */

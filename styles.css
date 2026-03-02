@@ -465,8 +465,8 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
 
 .proyectos .hero-slider {
   position: relative;
-  width: 100%;
-  height: 100vh;
+  width: 90%;
+  height: 90%;
   overflow: hidden;
 }
 
@@ -474,7 +474,7 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
   display: flex;
   width: 100%;
   height: 100%;
-  transition: transform 2s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 .proyectos .slide {
@@ -485,7 +485,7 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
 .proyectos .slide img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .proyectos .slide::after {
   content: "";

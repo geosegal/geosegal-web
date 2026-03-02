@@ -485,7 +485,7 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
 .proyectos .slide img {
   width: 80%;
   height: 80%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .proyectos .slide::after {
   content: "";
@@ -519,15 +519,15 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
 
 @media (max-width: 768px) {
 
-  .topografia .hero-slider {
+  .proyectos  .hero-slider {
     height: 60vh;
   }
 
-  .topografia .slide-content h1 {
+  .proyectos  .slide-content h1 {
     font-size: 2rem;
   }
 
-  .topografia .slide-content p {
+  .proyectos  .slide-content p {
     font-size: 1rem;
   }
 

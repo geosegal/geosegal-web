@@ -240,14 +240,14 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
   z-index: 10;
   color: white;
   top: 50%;
-  left: 10%;
+  left: 30%;
   transform: translateY(-50%, 50%);
   text-align: center;
 
 }
 
 .topografia .slide-content h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 

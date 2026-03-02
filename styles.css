@@ -491,8 +491,8 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
   background: #000;
 }
 .proyectos .slide img {
-   max-width: 95%;
-  max-height: 95%;
+   width: 95%;
+  height: 95%;
   object-fit: contain;
 }
 

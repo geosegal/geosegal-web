@@ -463,7 +463,7 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
 
 /* ================= PROYECTOS SLIDER ================= */
 
-.proyectos .slider {
+.proyectos .hero-slider {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -520,9 +520,9 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
   font-size: 1.2rem;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
-  .proyectos-slider {
+
+  .topografia .hero-slider {
     height: 60vh;
   }
 
@@ -533,8 +533,8 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
   .topografia .slide-content p {
     font-size: 1rem;
   }
-}
 
+}
 
 /* PROYECTOS DESTACADOS */
 

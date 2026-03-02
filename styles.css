@@ -486,7 +486,7 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000;
+  background: red;
 }
 .proyectos .slide img {
    max-width: 95%;

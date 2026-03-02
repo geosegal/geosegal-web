@@ -187,22 +187,19 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 
-  <script>
+<script>
 window.addEventListener("load", function() {
 
-  const container = document.querySelector(".proyectos-slides");
   const slides = document.querySelectorAll(".proyectos-slide");
-
-  if (!container) return;
-
   let index = 0;
-  const total = slides.length;
+
+  slides[index].classList.add("active");
 
   setInterval(() => {
-    index++;
-    if (index >= total) index = 0;
-    container.style.transform = `translateX(-${index * 100}%)`;
-  }, 7000);
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+  }, 5000);
 
 });
 </script>

@@ -473,7 +473,7 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
 .proyectos .slides {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 50%;
   transition: transform 2s ease-in-out;
 }
 

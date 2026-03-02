@@ -466,8 +466,8 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
 .proyectos .hero-slider {
   position: relative;
   width: 100%;
-  max-width: 1100px;   /* limita el ancho */
-  height: 450px;       /* tamaño controlado */
+  max-width: 1200px;   /* limita el ancho */
+  height: 600px;       /* tamaño controlado */
   margin: 60px auto;   /* lo centra */
   overflow: hidden;
   border-radius: 12px;

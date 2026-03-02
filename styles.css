@@ -240,9 +240,8 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
   z-index: 10;
   color: white;
   top: 50%;
-  left: 50%;
+  left: 10%;
   transform: translateY(-50%, 50%);
-  max-width: 600px;
   text-align: center;
 
 }

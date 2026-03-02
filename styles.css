@@ -466,13 +466,13 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
 .proyectos-hero {
   position: relative;
   width: 100%;
-  height: 700px;
+  height: 600px;
   overflow: hidden;
 }
 
 .proyectos-slides {
   display: flex;
-  width: 600%;
+  width: 500%;
   height: 100%;
   transition: transform 1s ease-in-out;
 }
@@ -486,7 +486,7 @@ background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
 .proyectos-slide img {
   width: 70%;
   height: 70%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .proyectos-content {

@@ -219,8 +219,8 @@ section { padding: 6rem 0; }
 }
 
 .topografia .slide img {
-  width: 100%;
-  height: 100%;
+  width: 120%;
+  height: 120%;
   object-fit: contain;
 background-color: rgba(0, 0, 0, 0.6); /* para que no quede blanco */;
 }

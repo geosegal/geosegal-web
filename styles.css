@@ -476,9 +476,9 @@ body {
 
 .proyectos-slides {
   display: flex;
-  width: 300%; /* número de imágenes x 100 */
+  width: 600%; /* número de imágenes x 100 */
   height: 100%;
-  transition: transform 1s ease-in-out;
+  transition: transform 2s ease-in-out;
 }
 
 .proyectos-slide {

@@ -127,15 +127,6 @@ function mostrarProyectos(proyectos) {
 }
 
 function crearCategoria(titulo, lista) {
-  if (!lista || lista.length === 0) {
-  const empty = document.createElement("p");
-  empty.textContent = "No existen proyectos en esta categoría.";
-  empty.style.fontSize = "14px";
-  empty.style.color = "#777";
-  category.appendChild(empty);
-}
-
-  if (!lista || lista.length === 0) return;
 
   const category = document.createElement("div");
   category.classList.add("category");
@@ -144,55 +135,64 @@ function crearCategoria(titulo, lista) {
   title.textContent = titulo;
   category.appendChild(title);
 
-  lista.forEach(proyecto => {
+  if (!lista || lista.length === 0) {
+    const empty = document.createElement("p");
+    empty.textContent = "No existen proyectos en esta categoría.";
+    empty.style.fontSize = "14px";
+    empty.style.color = "#777";
+    category.appendChild(empty);
+  } else {
 
-    const card = document.createElement("div");
-    card.classList.add("project-card");
+    lista.forEach(proyecto => {
 
-    const info = document.createElement("div");
-    info.classList.add("project-info");
+      const card = document.createElement("div");
+      card.classList.add("project-card");
 
-    const nombre = document.createElement("strong");
-    nombre.textContent = proyecto.nombre;
+      const info = document.createElement("div");
+      info.classList.add("project-info");
 
-    const estado = document.createElement("span");
-    estado.classList.add("status");
+      const nombre = document.createElement("strong");
+      nombre.textContent = proyecto.nombre;
 
-    if (proyecto.estado === "finalizado") {
-      estado.textContent = "🟢 Finalizado";
-      estado.classList.add("finalizado");
-    } 
-    else if (proyecto.estado === "proceso") {
-      estado.textContent = "🟠 En proceso";
-      estado.classList.add("proceso");
-    } 
-    else {
-      estado.textContent = "🔴 Sin iniciar";
-      estado.classList.add("sin-iniciar");
-    }
+      const estado = document.createElement("span");
+      estado.classList.add("status");
 
-    info.appendChild(nombre);
-    info.appendChild(estado);
+      if (proyecto.estado === "finalizado") {
+        estado.textContent = "🟢 Finalizado";
+        estado.classList.add("finalizado");
+      } 
+      else if (proyecto.estado === "proceso") {
+        estado.textContent = "🟠 En proceso";
+        estado.classList.add("proceso");
+      } 
+      else {
+        estado.textContent = "🔴 Sin iniciar";
+        estado.classList.add("sin-iniciar");
+      }
 
-    if (proyecto.fecha) {
-      const fecha = document.createElement("small");
-      fecha.textContent = proyecto.fecha;
-      info.appendChild(fecha);
-    }
+      info.appendChild(nombre);
+      info.appendChild(estado);
 
-    card.appendChild(info);
+      if (proyecto.fecha) {
+        const fecha = document.createElement("small");
+        fecha.textContent = proyecto.fecha;
+        info.appendChild(fecha);
+      }
 
-    if (proyecto.archivos && proyecto.archivos.length > 0) {
-      const btn = document.createElement("a");
-      btn.href = proyecto.archivos[0].link;
-      btn.target = "_blank";
-      btn.classList.add("download-btn");
-      btn.textContent = "Descargar archivos";
-      card.appendChild(btn);
-    }
+      card.appendChild(info);
 
-    category.appendChild(card);
-  });
+      if (proyecto.archivos && proyecto.archivos.length > 0) {
+        const btn = document.createElement("a");
+        btn.href = proyecto.archivos[0].link;
+        btn.target = "_blank";
+        btn.classList.add("download-btn");
+        btn.textContent = "Descargar archivos";
+        card.appendChild(btn);
+      }
+
+      category.appendChild(card);
+    });
+  }
 
   projectsContainer.appendChild(category);
 }

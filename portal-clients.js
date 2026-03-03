@@ -109,6 +109,13 @@ function mostrarProyectos(proyectos) {
 }
 
 function crearCategoria(titulo, lista) {
+  if (!lista || lista.length === 0) {
+  const empty = document.createElement("p");
+  empty.textContent = "No existen proyectos en esta categoría.";
+  empty.style.fontSize = "14px";
+  empty.style.color = "#777";
+  category.appendChild(empty);
+}
 
   if (!lista || lista.length === 0) return;
 

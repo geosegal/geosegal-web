@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal privado de clientes Geosegal">
+  <title>Geosegal | Portal de Clientes</title>
+
+  <!-- CSS general del sitio -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- CSS exclusivo del portal -->
+  <link rel="stylesheet" href="portal-clientes.css">
+
+  <link rel="icon" href="Logo.png" type="image/png">
+</head>
+<body>
+
+<!-- ======= HEADER (REUTILIZADO) ======= -->
+<header class="header">
+  <div class="header-left">
+    <a href="index.html">
+      <img src="geosegal.png" alt="Geosegal" class="logo-img">
+    </a>
+  </div>
+
+  <div class="header-right">
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="topografia.html">Topografía</a></li>
+        <li><a href="arquitectura.html">Arquitectura</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="biblioteca.html">Biblioteca</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="portal-clientes.html" class="active">Portal Clientes</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ======= CONTENIDO PORTAL ======= -->
+
+<section class="portal-wrapper">
+
+  <!-- LOGIN -->
+  <div class="login-box" id="loginSection">
+    <h2>Portal de Clientes</h2>
+    <p class="portal-subtitle">Acceso documental privado</p>
+
+    <input type="text" id="rutInput" placeholder="Ingrese su RUT (12.345.678-9)">
+    <button id="loginBtn">Ingresar</button>
+
+    <p class="error-message" id="errorMessage"></p>
+  </div>
+
+  <!-- PROYECTOS -->
+  <div class="projects-section hidden" id="portalSection">
+    <div class="portal-header">
+      <h2>Proyectos Asociados</h2>
+      <button class="logout-btn" id="logoutBtn">Cerrar sesión</button>
+    </div>
+
+    <div id="projectsContainer"></div>
+  </div>
+
+</section>
+
+<script src="portal-clientes.js"></script>
+</body>
+</html>

@@ -671,7 +671,7 @@ footer {
 
 .hero-biblioteca {
   height: 50vh;
-  background: url('biblioteca-bg.jpg') center/cover no-repeat;
+  background: #000000;
   display: flex;
   align-items: center;
   justify-content: center;

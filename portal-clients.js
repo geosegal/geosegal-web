@@ -4,7 +4,7 @@
 
 const clientes = [
   {
-    rut: "12.345.678-9",
+    rut: "14.245.559-5",
     proyectos: {
       topografia: [
         {
@@ -29,6 +29,24 @@ const clientes = [
       ]
     }
   }
+
+  {
+  rut: "20.311.655-1",
+  proyectos: {
+    topografia: [],
+    arquitectura: [
+      {
+        nombre: "Regularización Vivienda Rural",
+        estado: "finalizado",
+        fecha: "Diciembre 2025",
+        archivos: [
+          { nombre: "Expediente.pdf", link: "LINK_DRIVE" }
+        ]
+      }
+    ],
+    ingenieria: []
+  }
+}
 ];
 
 // ==========================

@@ -35,11 +35,27 @@ const clientes = [
 // VALIDAR FORMATO RUT
 // ==========================
 
-function validarFormatoRut(rut) {
-  const regex = /^\d{1,2}\.\d{3}\.\d{3}-[\dkK]$/;
-  return regex.test(rut);
-}
+function validarRutCompleto(rut) {
 
+  rut = rut.replace(/\./g, '').replace('-', '');
+  const cuerpo = rut.slice(0, -1);
+  let dv = rut.slice(-1).toUpperCase();
+
+  let suma = 0;
+  let multiplo = 2;
+
+  for (let i = cuerpo.length - 1; i >= 0; i--) {
+    suma += multiplo * cuerpo.charAt(i);
+    multiplo = multiplo < 7 ? multiplo + 1 : 2;
+  }
+
+  const dvEsperado = 11 - (suma % 11);
+  const dvFinal = dvEsperado === 11 ? '0' :
+                  dvEsperado === 10 ? 'K' :
+                  dvEsperado.toString();
+
+  return dvFinal === dv;
+}
 // ==========================
 // ELEMENTOS
 // ==========================
@@ -60,10 +76,10 @@ loginBtn.addEventListener("click", () => {
 
   const rutIngresado = rutInput.value.trim();
 
-  if (!validarFormatoRut(rutIngresado)) {
-    errorMessage.textContent = "Ingrese un RUT válido.";
-    return;
-  }
+  if (!validarRutCompleto(rutIngresado)) {
+  errorMessage.textContent = "RUT inválido.";
+  return;
+}
 
   const cliente = clientes.find(c => c.rut === rutIngresado);
 

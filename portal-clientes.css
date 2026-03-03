@@ -27,6 +27,12 @@
   margin-bottom: 30px;
 }
 
+.portal-info {
+  font-size: 13px;
+  color: #777;
+  margin-top: 10px;
+}
+
 .login-box input {
   width: 100%;
   padding: 12px;
